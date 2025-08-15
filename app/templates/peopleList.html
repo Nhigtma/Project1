@@ -1,0 +1,12 @@
+<h1>People</h1>
+<a href="{% url 'peopleCreate' %}">Add New</a>
+<ul>
+{% for person in people %}
+    <li>
+        {{ person }}
+        <a href="{% url 'personDetail' person.cc %}">View</a>
+        <a href="{% url 'personUpdate' person.cc %}">Edit</a>
+        <a href="{% url 'personDelete' person.cc %}">Delete</a>
+    </li>
+{% endfor %}
+</ul>

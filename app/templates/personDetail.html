@@ -1,0 +1,9 @@
+<h1>{{ person.first_name }} {{ person.last_name }}</h1>
+<ul>
+    <li><strong>ID:</strong> {{ person.cc }}</li>
+    <li><strong>Age:</strong> {{ person.age }}</li>
+    <li><strong>Weight:</strong> {{ person.weight }} kg</li>
+    <li><strong>Height:</strong> {{ person.height }} cm</li>
+    <li><strong>imc:</strong> {{ person.imc}}</li>
+</ul>
+<a href="{% url 'peopleList' %}">Back to list</a>
