@@ -5,4 +5,4 @@ class peopleForm(forms.ModelForm):
     class Meta:
         model = people
         fields = '__all__'
-        exclude = ['imc']
+        exclude = ['imc','state']
